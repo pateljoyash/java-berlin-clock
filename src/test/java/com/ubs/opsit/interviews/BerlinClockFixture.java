@@ -1,11 +1,14 @@
 package com.ubs.opsit.interviews;
 
+import static com.ubs.opsit.interviews.support.BehaviouralTestEmbedder.aBehaviouralTestRunner;
+import static org.assertj.core.api.Assertions.assertThat;
+
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
 import org.junit.Test;
 
-import static com.ubs.opsit.interviews.support.BehaviouralTestEmbedder.aBehaviouralTestRunner;
-import static org.assertj.core.api.Assertions.assertThat;
+import com.ubs.opsit.interviews.exceptions.ApplicationException;
+import com.ubs.opsit.interviews.impl.BerlinClockConverter;
 
 /**
  * Acceptance test class that uses the JBehave (Gerkin) syntax for writing stories.  You should not need to
@@ -15,6 +18,11 @@ public class BerlinClockFixture {
 
     private TimeConverter berlinClock;
     private String theTime;
+    
+    public BerlinClockFixture()
+	{
+    	berlinClock = new BerlinClockConverter();
+	}
 
     @Test
     public void berlinClockAcceptanceTests() throws Exception {
@@ -30,7 +38,7 @@ public class BerlinClockFixture {
     }
 
     @Then("the clock should look like $")
-    public void thenTheClockShouldLookLike(String theExpectedBerlinClockOutput) {
+    public void thenTheClockShouldLookLike(String theExpectedBerlinClockOutput) throws ApplicationException {
         assertThat(berlinClock.convertTime(theTime)).isEqualTo(theExpectedBerlinClockOutput);
     }
 }
