@@ -1,5 +1,5 @@
 
-# The Berlin Clock 123456
+# The Berlin Clock
 
 The Berlin Uhr (clock) is a rather strange way to show the time. On the top of the clock there is a yellow lamp that
 blinks on/off every two seconds. The time is calculated by adding rectangular lamps.
@@ -13,11 +13,11 @@ first row every lamp represents 5 minutes. In this first row the 3rd, 6th and 9t
 quarter, half and last quarter of an hour. The other lamps are yellow. In the last row with 4 lamps every lamp
 represents 1 minute.
 
-One can be seen [here](http://uniqueclocks.co.uk/media/berlin~clock.jpg~1.gif)
+One can be seen [here]     (http://uniqueclocks.co.uk/media/berlin~clock.jpg~1.gif)
 
 ## The brief
 
-We have created a number of acceptance tests for the Berlin Clock and your challenge is to get them passing.
+    We have created a number of acceptance tests for the Berlin Clock and your challenge is to get them passing.
 
 ## Some hints
 If you are new to Gradle, it may be worth spending 10 minutes reading a high level summary.  We are using the Gradle
