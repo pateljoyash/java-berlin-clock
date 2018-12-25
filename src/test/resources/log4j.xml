@@ -2,7 +2,7 @@
 <!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
 
 <log4j:configuration>
-
+<!--This is a Dummy COmment and require to be deleted -->
     <appender name="ConsoleAppender"
               class="org.apache.log4j.ConsoleAppender">
         <!-- <param name="Threshold" value="debug" /> -->
