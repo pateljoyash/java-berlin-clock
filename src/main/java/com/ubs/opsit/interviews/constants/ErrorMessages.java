@@ -1,5 +1,8 @@
 package com.ubs.opsit.interviews.constants;
 
+/**
+ * This is Error Message Class
+ */
 public final class ErrorMessages
 {
 	public static final String INPUT_INVALID = "Provided Input Time is Invalid";
