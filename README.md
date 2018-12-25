@@ -1,5 +1,5 @@
 
-# The Berlin Clock
+# The Berlin Clock ABCDEFGHIJKLMN
 
 The Berlin Uhr (clock) is a rather strange way to show the time. On the top of the clock there is a yellow lamp that
 blinks on/off every two seconds. The time is calculated by adding rectangular lamps.
