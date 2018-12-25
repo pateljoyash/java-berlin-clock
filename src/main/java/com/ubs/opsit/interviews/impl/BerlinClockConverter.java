@@ -6,6 +6,9 @@ import com.ubs.opsit.interviews.enums.ClockProperties;
 import com.ubs.opsit.interviews.transferobject.ClockTo;
 import com.ubs.opsit.interviews.utility.InputValidator;;
 
+/**
+ * This is a Converter
+ */
 public final class BerlinClockConverter implements TimeConverter
 {
 

@@ -2,6 +2,9 @@ package com.ubs.opsit.interviews.constants;
 
 import com.ubs.opsit.interviews.enums.ClockProperties;
 
+/**
+ * This class contains Constants
+ */
 public final class BerlinClockConstants
 {
 
